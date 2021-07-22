@@ -1,0 +1,25 @@
+{
+    "name": "ssitu/nietzsche",
+    "description": "A Mustache wrap to render only perfect Mustache templates. Aka, monitor exceptions and missing variables.",
+    "type": "library",
+    "keywords" :["php", "Mustache", "error-monitoring"],
+    "homepage":"https://github.com/I-is-as-I-does/Nietzsche",
+    "license": "MIT",
+    "readme":"README.md",
+    "authors": [
+        {
+            "name": "I-is-as-I-does",
+            "email": "66915011+I-is-as-I-does@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "mustache/mustache": "~2.5",
+        "ssitu/blueprints": "^0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SSITU\\Nietzsche\\": "src"
+        }
+    }
+}
