@@ -2,10 +2,13 @@
 /* This file is part of Nietzsche | SSITU | (c) 2021 I-is-as-I-does */
 namespace SSITU\Nietzsche;
 
-use \SSITU\Blueprints;
+use \SSITU\Blueprints\Log;
 
-class Nietzsche implements Blueprints\FlexLogsInterface
+class Nietzsche implements Log\FlexLogsInterface
 {
+    use Log\FlexLogsTrait;
+
+    
 
     public function perfectMustache($primaryViewPath, $variables, $mustacheOpts = [], $requiredNonEmpty = [])
     {
