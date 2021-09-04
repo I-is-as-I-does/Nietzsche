@@ -20,7 +20,7 @@ class Nietzsche implements Log\FlexLogsInterface
             }
 
             if (!$this->hasMissingContent($variables, $requiredNonEmpty)) {
-
+               
                 $viewDir = dirname($primaryViewPath);
                 $viewName = basename($primaryViewPath);
 
@@ -36,6 +36,7 @@ class Nietzsche implements Log\FlexLogsInterface
                 }
             }
         }
+       
         return false;
     }
 
