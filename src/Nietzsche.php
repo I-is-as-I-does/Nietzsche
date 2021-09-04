@@ -5,14 +5,14 @@ namespace SSITU\Nietzsche;
 use \SSITU\Blueprints\Log;
 
 class Nietzsche implements Log\FlexLogsInterface
+
 {
     use Log\FlexLogsTrait;
-
-    
 
     public function perfectMustache($primaryViewPath, $variables, $mustacheOpts = [], $requiredNonEmpty = [])
     {
         $this->logs = [];
+
         if (!$this->isInvalidPath($primaryViewPath)) {
 
             if (is_object($variables)) {
